@@ -1,0 +1,22 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<section id="sections">
+    <div class="videopost">
+        <h1>Видеоролик 1</h1>
+        <VIDEO src="/media/hp.mp4" controls="controls" width="400" height="300" poster="/media/harry.jpg"></VIDEO>
+    </div>
+
+    <hr />
+
+    <div class="videopost">
+        <h1>Видеоролик 2</h1>
+        <VIDEO src="/media/hermi.mp4" controls="controls" width="400" height="300" poster="/media/hermione.jpg"></VIDEO>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,51 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+<div class="anketa">
+<h2>Регистрация пользователя</h2>
+
+    <form method="POST" > {% csrf_token %}
+        <div>
+            {{ regform.as_p}}
+            <button type="submit" id="registr" > Зарегистрировать </button>
+        </div>
+    </form>
+
+<script>
+        function registr_mouse()
+        {
+            $('#registr').css('background-color', 'gold');
+        }
+
+        $('#registr').mouseover(registr_mouse);
+    </script>
+
+     <script>
+        function registr_mouse()
+        {
+            $('#registr').css('background-color', 'white');
+        }
+
+        $('#registr').mouseout(registr_mouse);
+    </script>
+
+    <script>
+        function registr_mouse()
+        {
+            $('#registr').css('color', 'cyan');
+        }
+
+        $('#registr').mouseover(registr_mouse);
+    </script>
+
+     <script>
+        function registr_mouse()
+        {
+            $('#registr').css('color', 'black');
+        }
+
+        $('#registr').mouseout(registr_mouse);
+    </script>
+
+</div>
+{% endblock %}

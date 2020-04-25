@@ -1,0 +1,23 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+    {% load staticfiles %}
+ 
+ <div class="anketa">
+    <h2>{{ title }}</h2>
+    <h3>{{ message }}</h3>
+
+         <table>
+            <tr>
+                <td><a href ="https://potter-shop.ru" target="_blank"> <img src="{% static 'app/content/potter-shop.png' %}" alt="Logo 1"/></a></td>
+                <td><a href ="https://potterman.ru" target="_blank"> <img src="{% static 'app/content/potterman.png' %}" alt="Logo 1"/></a></td>
+                <td><a href ="https://vk.com/trust_severus" target="_blank"> <img src="{% static 'app/content/kosoy-pereulok.png' %}" alt="Logo 1"/></a></td>
+            </tr>
+             <tr>
+                 <td>Интернет-магазин товаров из вселенной Гарри Поттера.<br/> Огромный выбор различных наборов со всеми книгами о Гарри Поттере в переводе "РОСМЭН".</td>
+                 <td>Интернет-магазин товаров из вселенной Гарри Поттера и других популярных миров. <br/>Фигурки любимых персонажей, одежда и многое другое из Игры престолов, Властелина Колец, Marvel и др.</td>
+                 <td>Интернет-магазин товаров по Гарри Поттеру.<br/><b>НО</b><br/>также можно участвовать раздичных конкурсах и выигрывать различные товары или скидки на товары в магазине.</td>
+             </tr>
+        </table>
+</div>
+{% endblock %}
